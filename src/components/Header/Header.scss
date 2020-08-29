@@ -31,18 +31,26 @@
   color: $color-grey-light-2;
   font-weight: 300;
   margin: 2rem 0;
+  backface-visibility: hidden;
 
   span {
     display: block;
   }
 
+  &-1 {
+    animation: moveInRight 1s;
+  }
+
   &-2 {
     font-size: 10rem;
     letter-spacing: 3px;
+    animation: moveInLeft 1s backwards;
   }
 
   &-3 {
     font-size: 3.5rem;
     letter-spacing: 4px;
+    animation: flip 1s;
   }
 }
+

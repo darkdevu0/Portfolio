@@ -1,30 +1,31 @@
 import React from "react"
 
 import "./NavBar.scss"
+import navBarList from "../../constant/NavBarList"
 
 const NavBar = () => {
   return (
     <div className="navigation">
-      <input type="checkbox" className="navigation__checkbox" id="nav-toggle" />
+      <input type="checkbox" className="navigation__checkbox" id="nav-toggle"/>
 
-        <label htmlFor="nav-toggle" className="navigation__button">
-          <span className="navigation__icon">&nbsp;</span>
-        </label>
+      <label htmlFor="nav-toggle" className="navigation__button">
+        <span className="navigation__icon">&nbsp;</span>
+      </label>
 
-        <div className="navigation__background">&nbsp;</div>
+      <div className="navigation__background">&nbsp;</div>
 
-        <nav className="navigation__nav">
-          <ul className="navigation__list">
-            <li className="navigation__item"><a href="/" className="navigation__link"><span>01</span>About Natous</a>
+      <nav className="navigation__nav">
+        <ul className="navigation__list">
+          {navBarList.map(item => (
+            <li className="navigation__item" key={item.id}>
+              <a href="/" className="navigation__link">
+                <span>{item.id}</span>
+                {item.text}
+              </a>
             </li>
-            <li className="navigation__item"><a href="/" className="navigation__link"><span>02</span>Your benfits</a>
-            </li>
-            <li className="navigation__item"><a href="/" className="navigation__link"><span>03</span>Popular tours</a>
-            </li>
-            <li className="navigation__item"><a href="/" className="navigation__link"><span>04</span>Stories</a></li>
-            <li className="navigation__item"><a href="/" className="navigation__link"><span>05</span>Book now</a></li>
-          </ul>
-        </nav>
+          ))}
+        </ul>
+      </nav>
     </div>
   )
 }

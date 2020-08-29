@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap');
 @import "variables";
+@import "animations";
 
 * {
     margin: 0;
@@ -35,5 +36,18 @@ body {
 .center {
     margin: 0 auto;
 }
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.row {
+    width: 114rem;
+    margin: 0 auto;
+}
+
 
 

@@ -8,8 +8,8 @@ const FeaturesCard = ({icon, heading, content}) => {
       <div className="card__icon">
         <i className={`${icon} card__icon-t`}/>
       </div>
-      <div className="card__heading">
-        <h3>{heading}</h3>
+      <div>
+        <h3 className="card__heading">{heading}</h3>
       </div>
       <div className="card__content">
         {content}

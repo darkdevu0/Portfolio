@@ -28,7 +28,7 @@ const Header = () => {
           <span className={'heading-2'}>Devashish</span>
           <span className={'heading-3'}>freelance web developer</span>
         </h1>
-        <button className={'btn'}>Contact Me</button>
+        <button className={'btn animated'}>Contact Me</button>
       </div>
     </header>
   )
