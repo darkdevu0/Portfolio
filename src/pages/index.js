@@ -1,7 +1,7 @@
 import React from "react"
 
 import Header from "../components/Header/Header"
-import Layout from "../components/Layout/Layout"
+import Layout from "../components/Layout/LayouT"
 import Features from "../components/Features/Features"
 import Projects from "../components/Projects/Projects"
 import Contact from "../components/Contact/Contact"
